@@ -1,0 +1,19 @@
+pip install fastapi motor pydantic uvicorn
+
+
+
+
+school_blog_api/
+├── app/
+│   ├── __init__.py
+│   ├── main.py          
+│   ├── models.py        
+│   ├── database.py      
+│   └── routes.py      
+├── .env                 
+└── requirements.txt 
+
+uvicorn app.main:app --reload
+
+//.env
+MONGO_URL="mongodb://localhost:27017"
